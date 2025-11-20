@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eylam Tagor</title>
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --text: #f2f2f2;
+      --accent: #7ddcff;
+      --card-bg: #141416;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.45);
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    img.profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      opacity: 0.65;
+      margin-bottom: 25px;
+    }
+    .links a {
+      text-decoration: none;
+      background: #1f1f22;
+      padding: 10px 16px;
+      border-radius: 12px;
+      margin: 0 8px;
+      color: var(--accent);
+      font-weight: 600;
+      transition: 0.25s;
+      box-shadow: var(--shadow);
+    }
+    .links a:hover {
+      background: #2c2c31;
+      transform: translateY(-2px);
+    }
+    section {
+      background: var(--card-bg); color: var(--text);
+      padding: 35px 40px;
+      border-radius: var(--radius);
+      margin-bottom: 45px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.9rem;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #2a2a2d;
+      letter-spacing: -0.5px;
+    }
+    .pub-item, .proj-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 25px;
+      align-items: flex-start;
+      background: #1b1b1e;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 35px;
+    }
+    .pub-item img, .proj-item img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Profile Picture" class="profile" />
+      <h1>Eylam Tagor</h1>
+      <p class="subtitle">M.S. Computer Science • Columbia University • New York, NY</p>
+      <div class="links">
+        <a href="mailto:eylam.tagor@columbia.edu">Email</a>
+        <a href="https://linkedin.com/in/eylamtagor">LinkedIn</a>
+        <a href="https://github.com/EylamTagor">GitHub</a>
+        <a href="https://drive.google.com/file/d/1ACBe1-e-sYcBNcs8CD7nZNxcz8zDF4sv/view?usp=share_link">CV</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Bio</h2>
+      <p>I am an M.S. student in Computer Science at Columbia University, advised by Prof. Elias Bareinboim. My research focuses on <strong>reinforcement learning</strong> and <strong>causal inference</strong>, particularly in building reliable decision‑making systems that can handle uncertainty, partial observability, and real‑world imperfections.</p>
+
+      <p>Before Columbia, I completed my undergraduate degree at UT Austin, where I worked with Prof. Peter Stone on multi‑agent RL and sim2real as part of the RoboCup team.</p>
+
+      <p><strong>I am currently applying for Ph.D. programs for Fall 2026</strong>, and seeking research internships from now until Fall 2026.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications & Preprints</h2>
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
+        <img src="placeholder_pub1.jpg" alt="Publication Image" style="width:120px;height:120px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div>
+          <strong>Robust RL Under Uncertainty:</strong> A Benchmark for Confounded & Partially Observable Environments <em>(2025)</em>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+        <img src="placeholder_proj1.jpg" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div><strong>Gymnasium for Causal Imitation Learning:</strong> Developed imitation learning algorithms grounded in causal inference; built SCM-parameterized RL environments supporting observational, interventional, and counterfactual evaluation.</div>
+      </div>
+
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+        <img src="placeholder_proj2.jpg" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div><strong>Multi-Agent RL for RoboCup @ LARG:</strong> Implemented multi-agent deep RL behaviors for NAO robot soccer; improved sim2real transfer using high-fidelity simulation, contributing to a first-place finish in the 2024 RoboCup SPL Challenge Division.</div>
+      </div>
+
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+        <img src="placeholder_proj3.jpg" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div><strong>Residual Neural Causal Model:</strong> Designed ResNCM, a neural causal model using PyTorch and Causal-Learn; conducted counterfactual analyses on education datasets, outperforming classical and deep-learning baselines.</div>
+      </div>
+
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+        <img src="placeholder_proj4.jpg" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div><strong>Generalist Embodied Agent @ NVIDIA:</strong> Built embodied agents and multimodal training environments using OpenAI Gym; integrated RL algorithms, LLMs, and large-scale pretraining to improve cross-task generalization.</div>
+      </div>
+
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>ORCS 4529: Reinforcement Learning (Fall 2025)</li>
+        <li>COMS 4995: Causal Inference for Data Science (Spring 2025)</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
