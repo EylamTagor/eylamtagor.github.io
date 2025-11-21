@@ -79,11 +79,22 @@
       border-bottom: 2px solid #2a2a2d;
       letter-spacing: -0.5px;
     }
+    .pub-item, .proj-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 25px;
+      align-items: flex-start;
+      background: #1b1b1e;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 35px;
+    }
     .pub-item img, .proj-item img {
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 14px;
     }
     ul {
       padding-left: 20px;
@@ -115,7 +126,7 @@
 
     <section id="publications">
       <h2>Publications & Preprints</h2>
-      <div class="pub-item">
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/benchmark.png" alt="Publication Image" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
         <div>
           <strong>CausalGym:</strong> Benchmarking Robustness in Confounded & Partially Observable Environments <em>(Coming Soon)</em>
@@ -125,22 +136,22 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="proj-item">
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/cil.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
         <div><strong>Gymnasium for Causal Imitation Learning:</strong> Developed imitation learning algorithms grounded in causal inference; built SCM-parameterized RL environments supporting observational, interventional, and counterfactual evaluation.</div>
       </div>
 
-      <div class="proj-item">
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/robocup.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
         <div><strong>Multi-Agent RL for RoboCup @ LARG:</strong> Implemented multi-agent deep RL behaviors for NAO robot soccer; improved sim2real transfer using high-fidelity simulation, contributing to a first-place finish in the 2024 RoboCup SPL Challenge Division.</div>
       </div>
 
-      <div class="proj-item">
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/resncm.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
         <div><strong>Residual Neural Causal Model:</strong> Designed ResNCM, a neural causal model using PyTorch and Causal-Learn; conducted counterfactual analyses on education datasets, outperforming classical and deep-learning baselines.</div>
       </div>
 
-      <div class="proj-item">
+      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/nvidia.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
         <div><strong>Generalist Embodied Video Game Agent @ NVIDIA:</strong> Built embodied agents and multimodal training environments using OpenAI Gym; integrated RL algorithms, LLMs, and large-scale pretraining to improve cross-task generalization.</div>
       </div>
