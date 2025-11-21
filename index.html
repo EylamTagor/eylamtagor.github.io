@@ -79,7 +79,7 @@
       border-bottom: 2px solid #2a2a2d;
       letter-spacing: -0.5px;
     }
-    .pub-item, .proj-item {
+    .pub-item {
       display: grid;
       grid-template-columns: 160px 1fr;
       gap: 25px;
@@ -90,7 +90,7 @@
       box-shadow: var(--shadow);
       margin-bottom: 35px;
     }
-    .pub-item img, .proj-item img {
+    .pub-item img {
       width: 160px;
       height: 160px;
       object-fit: cover;
@@ -99,7 +99,14 @@
     ul {
       padding-left: 20px;
     }
-  </style>
+      .pub-item a {
+      color: #a8e8ff;
+    }
+    .pub-item a:hover {
+      color: #c5f2ff;
+      text-decoration: underline;
+    }
+</style>
 </head>
 <body>
   <div class="container">
@@ -124,36 +131,31 @@
       <p><strong>I am currently applying for Ph.D. programs for Fall 2026</strong>, and seeking research internships from now until Fall 2026.</p>
     </section>
 
-    <section id="publications">
-      <h2>Publications & Preprints</h2>
+    <section id="research">
+      <h2>Research</h2>
       <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/benchmark.png" alt="Publication Image" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
-        <div>
-          <strong>CausalGym:</strong> Benchmarking Robustness in Confounded & Partially Observable Environments <em>(Coming Soon)</em>
-        </div>
+        <div><strong>CausalGym:</strong> Benchmarking Robustness in Confounded & Partially Observable Environments <em>(Coming Soon)</em></div>
       </div>
-    </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/cil.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
-        <div><strong>Gymnasium for Causal Imitation Learning:</strong> Developed imitation learning algorithms grounded in causal inference; built SCM-parameterized RL environments supporting observational, interventional, and counterfactual evaluation.</div>
+        <div><strong>Gymnasium for Causal Imitation Learning:</strong> Developed imitation learning algorithms grounded in causal inference; built SCM-parameterized RL environments supporting observational, interventional, and counterfactual evaluation.<br><a href="pdfs/Gymnasium for Causal Imitation Learning.pdf">Tech Report</a></div>
       </div>
 
-      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/robocup.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
-        <div><strong>Multi-Agent RL for RoboCup @ LARG:</strong> Implemented multi-agent deep RL behaviors for NAO robot soccer; improved sim2real transfer using high-fidelity simulation, contributing to a first-place finish in the 2024 RoboCup SPL Challenge Division.</div>
+        <div><strong>Multi-Agent RL for RoboCup @ LARG:</strong> Implemented multi-agent deep RL behaviors for NAO robot soccer; improved sim2real transfer using high-fidelity simulation, contributing to a first-place finish in the 2024 RoboCup SPL Challenge Division.<br><a href="https://github.com/Badger-RL">Code</a></div>
       </div>
 
-      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/resncm.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
-        <div><strong>Residual Neural Causal Model:</strong> Designed ResNCM, a neural causal model using PyTorch and Causal-Learn; conducted counterfactual analyses on education datasets, outperforming classical and deep-learning baselines.</div>
+        <div><strong>Residual Neural Causal Model:</strong> Designed ResNCM, a neural causal model using PyTorch and Causal-Learn; conducted counterfactual analyses on education datasets, outperforming classical and deep-learning baselines.<br><a href="pdfs/ResNCM.pdf">Tech Report</a> · <a href="https://github.com/EylamTagor/ResNCM">Code</a></div>
       </div>
 
-      <div class="proj-item" style="display:flex;gap:20px;align-items:flex-start;">
+      <div class="pub-item" style="display:flex;gap:20px;align-items:flex-start;">
         <img src="assets/nvidia.png" style="width:140px;height:140px;border-radius:10px;object-fit:cover;box-shadow:var(--shadow);" />
-        <div><strong>Generalist Embodied Video Game Agent @ NVIDIA:</strong> Built embodied agents and multimodal training environments using OpenAI Gym; integrated RL algorithms, LLMs, and large-scale pretraining to improve cross-task generalization.</div>
+        <div><strong>Generalist Embodied Video Game Agent @ NVIDIA:</strong> Built embodied agents and multimodal training environments using OpenAI Gym; integrated RL algorithms, LLMs, and large-scale pretraining to improve cross-task generalization.<br><a href="https://github.com/EylamTagor/Gym-Retro-Agent">Code</a></div>
       </div>
 
     </section>
